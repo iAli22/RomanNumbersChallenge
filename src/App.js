@@ -2,8 +2,8 @@ import { useState } from "react";
 import { RomanNumerals } from "../src/helper/RomanNumerals";
 import { ConverterInput } from "../src/components";
 export default function App() {
-  const [roman, setToRoman] = useState();
-  const [number, setFromRoman] = useState("");
+  const [roman, setToRoman] = useState(1000);
+  const [number, setFromRoman] = useState("m");
   let RomanNum = new RomanNumerals(roman, number);
 
   const onToRomanChange = (e) => {
