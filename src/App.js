@@ -3,7 +3,7 @@ import { RomanNumerals } from "../src/helper/RomanNumerals";
 import { ConverterInput } from "../src/components";
 export default function App() {
   const [roman, setToRoman] = useState(1000);
-  const [number, setFromRoman] = useState("m");
+  const [number, setFromRoman] = useState("M");
   let RomanNum = new RomanNumerals(roman, number);
 
   const onToRomanChange = (e) => {
